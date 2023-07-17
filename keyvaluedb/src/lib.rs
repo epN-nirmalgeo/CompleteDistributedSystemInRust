@@ -1,4 +1,3 @@
+use std::io::Error;
 
-pub use crate::keyvaluedb::KeyValueMap;
-
-mod keyvaluedb;
+pub type Result<T> = std::result::Result<T, Error>;

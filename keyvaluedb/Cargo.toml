@@ -5,4 +5,14 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "keyvaluedb-client"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "keyvaluedb"
+path = "src/bin/server.rs"
+
 [dependencies]
+mini-redis = "0.4.1"
+tokio = "1.29.1"
